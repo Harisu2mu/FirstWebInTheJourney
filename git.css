@@ -1,0 +1,15 @@
+div{
+    padding: 10px;
+    margin: 0 auto;
+    background-color: beige;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    color: rgb(7, 102, 102);
+    background-color: aqua;
+    border-radius: 3px;
+    width: auto;
+    padding: 4px;
+}
