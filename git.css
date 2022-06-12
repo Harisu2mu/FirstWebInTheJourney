@@ -3,6 +3,7 @@ div{
     margin: 0 auto;
     background-color: beige;
     box-sizing: border-box;
+    border: 1px solid gray;
     border-radius: 5px;
 }
 h2{
@@ -10,6 +11,6 @@ h2{
     color: rgb(7, 102, 102);
     background-color: aqua;
     border-radius: 3px;
-    width: auto;
-    padding: 4px;
+    width:80px;
+    padding: 2px;
 }
