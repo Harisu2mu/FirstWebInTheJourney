@@ -13,48 +13,69 @@
     border-radius: 10px;
 
 }
+.banner1{
+    display: inline-block;
+}
 .hr1{
-    width: 50%;
+    width: 40%;
     border-radius: 200px;
 }
 
-nav, a{
+
+.world{
+    background-color: darkcyan;
+    color: white;
+    width: 40px;
+    left: 305;
+}
+h2{
+    position: relative;
+    color: darkcyan;
+    width: 40px;
+    display: inline;
+}
+
+/* ////////////NAVIGATION BAR////////////////// */
+.NavBar li, a{
+    margin-top: 30px;
+    list-style: none;
     text-decoration: none;
-    text-align: center;
+    display: inline-block;
+    color: darkcyan;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 1.3em;
-    color: gray;
-    margin: 30px;
 } 
-
-span{
-    border-left: 1px solid gray;
-    height: 4px;
-    margin: 10px;
-}
-/* ////////////NAVIGATION BAR////////////////// */
-nav {
-    
-
-
-}
-#container{
-    display: grid;
-    grid-template-columns: repeat(4 ,1fr);
-    grid-column-gap: 10px;
-}
-#container img{
+.NavBar span{
+    border: 1px solid rgb(168, 167, 167);
+    margin: 8px;
+} 
+ 
+.NavBar{
+    position: sticky;
+    display: inline-block;
     width: 100%;
 }
+a:hover{
+    box-sizing: border-box;
+    background-color: darkcyan;
+    color: #fff;
+    padding: 4px;
+}
+
 /* //////////////////CARD///////////////////// */
 p{
   border-radius: 5px;
   border: 2px solid lightgray; 
 }
 /* //////////////////STOCK//////////////////// */
-#container, p, img {
-    height: 80%;
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+#container p, img {
+    width: 100%;
+    
 }
 
 /* ///////////////////BUTTON////////////////// */
@@ -66,31 +87,72 @@ section{
 
 }
 
-/* input{
+
+/* ////////////////SEARCH BAR//////////// */
+#search{
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: darkcyan;
+    margin: 5px;
+    padding: 4px;
+    width: 50%;
+    outline: none;
+    border: 1.3px solid gray;
+}
+#search::placeholder{
+    color: #fff;
+}
+
+#search:focus{
+    background-color: #fff;
+    border: 1.3px solid darkcyan;
+    width: 100%;
+}
+/* ////////////////////////////BUTTON////////////////// */
+#container span{
+    width: 27%;
     display: inline-block;
     position: relative;
-    /* text-align: center; */
-    /* justify-items: center;
-    top: 15px;
-    width: 60px;
-    padding: 10px;
-    margin: 130px;
-}  */
-/* ////////////////BUTTON SELECTION//////////// */
-input:nth-child(1){
-    right: 90px;
+    left: 14.3%;
+    background-color: darkcyan;
     border-radius: 4px;
-    border-style: none;
+    color: #fff;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+
 }
-input:nth-child(2){
-    right: 60px;
-}
-input{
-    position: relative;
-    top: 50px;
-    padding: 7px;
+span,.add{
+    display: inline-block;
+    background-color: orange;
 }
 
-
-
-
+/* ////////////////////////////////STOCKS STYLING///////////////////////////////// */
+h1{
+    border: 2px solid darkcyan;
+    border-radius: 4px;
+    background-color: #fff;
+    color: darkcyan;
+    margin: 0 auto;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+}
+#stocks{
+    box-shadow: 10px 10px 50px rgb(224, 224, 224);
+    border-radius: 7px;
+    column-count: 3;
+    column-gap:     15px;
+    column-rule: 1px solid darkcyan;
+    justify-content: center;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 30px;
+    color: rgb(190, 190, 190);
+}
+.stockh3{
+    color: darkcyan;
+}
+.stockhr{
+    border-top: 1px solid darkcyan;
+}
